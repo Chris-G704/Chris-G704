@@ -1,3 +1,13 @@
+html { 
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
 h1 {
     color: black;
     font-size: 2.5em;
@@ -5,7 +15,10 @@ h1 {
   
 p {
 color: aqua;
-padding: 2.5em;
-background: midnightblue;
-}
+padding: 16px 12;
+margin: 12px 0;
+background-color: chocolate;
+}'
+
+
   
