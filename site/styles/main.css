@@ -2,23 +2,113 @@ html {
     box-sizing: border-box;
 }
 
-
-
-
-
-
-
-h1 {
-    color: black;
-    font-size: 2.5em;
+.width-wrap {
+    max-width: 960px;
+    background-color: #4e7ba6;
 }
-  
-p {
-color: aqua;
-padding: 16px 12;
-margin: 12px 0;
-background-color: chocolate;
-}'
 
+.width-wrap {
+    max-width: 960px;
+}
 
-  
+.width-wrap {
+    margin: 0 auto;
+}
+
+.width-wrap {
+    padding: 0 2em 2em;
+}
+.width-wrap {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.width-wrap {
+    margin-bottom: 3em;
+}
+
+footer hr {
+    width: clamp(300px, 50vw, 890px);
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px dotted #555;
+}
+
+dt::after {
+    content: ":";
+}
+
+body {
+    background-color: #89aaca;
+    color: #fff7f7
+}
+
+h1, h2, h3 { color: #005a8d 
+}
+a {
+    color: rgb(121, 85, 221)
+}
+
+header nav a {
+    color:burlywood
+}
+::selection { 
+    background-color: bisque;
+}
+table th, table td {
+    padding: 0.3em 1em;
+}
+thead th, tfoot th, tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+tbody td {
+    background-color: rgba (0, 0, 0, 0.15);
+}
+label {
+    display: block;
+}
+input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    background-color: #707982;
+    color: white;
+    cursor: pointer;
+}
+input:invalid {
+    background-color: #ffcccc;
+}
+header {
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3)
+}
+header nav {
+    padding: 0 2em;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 1em 1em 0.5em;
+    text-decoration: none;
+    border-top: 4px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+header nav a:hover {
+    border-top-color:aqua
+}
+
