@@ -44,7 +44,6 @@
 
 
 </head>
-
 </html>
 
 <body>
@@ -52,9 +51,12 @@
     <header id="top">
       <nav>
         <ul>
-          <a href="Home" title="Home"></a>
-          <a href="Links" title="Links"></a>
-          <a href="Glossary" title="Glossary"></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="lorem.html">Lorem Ipsum</a></li>
+          <li><a href="survey.html">Survey</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
@@ -151,7 +153,6 @@
         </tr>
       </table>
 </body>
-
 </html>
 
 
@@ -160,14 +161,21 @@
 
 
 <h2> My favourite things!</h2>
-<h3> 1. Geese Howard 2. Kazuya Mishima 3. Ryu</h3>
-<figure></figure>
+<div class="favourites">
+  <input type="radio" id="tab2" name="favourites" checked>
+  <label for="tab2"><h3>Geese Howard</h3></label>
+  <div class="content"></div>
+<ol>
+  <li>Geese Howard</li>
+  <li>Kazuya Mishima</li>
+  <li>Ryu</li>
+</ol>
+<figure>
 <div style="display: flex; justify-content: center; align-items: center;">
   <a href=https://chris-g704.github.io/Chris-G704/#top></a>
   <img src="\site\images\logo.png" alt="favourite thing">
   </a>
 </div>
-</figure>
 </figure>
 
 
@@ -187,10 +195,9 @@
   <picture>
     <source srcset="me.jpg" media="(max-width: 500px)">
     <source srcset="me.jpg" media="(min-width: 501px)">
-    <div style="display: flex; justify-content: center; align-items: center;">
       <a href="me.jpg">
         <img src="me.jpg" alt="A photo of me">
-
+        <img src="\site\images\paperclip.png" alt="paperclip" class="paperclip">
         <div style="display: flex; justify-content: center; align-items: center">
           <figcaption>Myself</figcaption>
         </div>
@@ -216,7 +223,11 @@
 
 <img>
 <logo class="png"></logo>
-<h3>Haiku</h3>
+
+<input type="radio" id="tab1" name="favourites">
+<label for="tab1">
+<h3>Haiku</h3></label>
+<div class="content"></div>
 <p>JANUARY<br>
   Delightful display<br>
   Snowdrops bow their pure white heads<br>
@@ -233,6 +244,5 @@
 
 </div>
 </body>
-
 </html>
 <!-- Found me! -->

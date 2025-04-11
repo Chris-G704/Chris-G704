@@ -245,5 +245,27 @@ footer {
   
   a[href="#top"]:hover {
     text-decoration: none; 
-  }
-  
+  } 
+
+.photo-wrapper {
+  position: relative; /* This makes it the anchor for absolutely positioned children */
+  display: inline-block;
+}
+
+.photo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.paperclip {
+  position: absolute;
+  top: 1255px;        
+  right: 40px;      
+  width: 50px;        
+  background: none !important;
+  box-shadow: none !important;
+  transform: rotate(25deg); 
+}
+
+
+
