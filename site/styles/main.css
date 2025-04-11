@@ -97,23 +97,27 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
+  display: inline;
 }
 
 header nav a {
-    display: inline-block;
     padding: 1em 1em 0.5em;
     text-decoration: none;
     border-top: 4px solid transparent;
     transition: border-color 0.3s ease;
 }
 
+header ul {
+  display: flex;
+  justify-content: center;
+  }
+
 a:hover {
     text-decoration: underline;
 }
 
 ol {
-    list-style-type: upper-roman;
+  list-style-type: upper-roman;
 }
 
 
@@ -237,7 +241,6 @@ footer {
     text-align: center;  
   }
   
- 
   a[href="#top"] {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     text-decoration: none;  
@@ -246,4 +249,93 @@ footer {
   a[href="#top"]:hover {
     text-decoration: none; 
   }
+
+.favourites .content {
+  display: none;
+}
+
+.favourites input:checked + label + .content {
+  display: block;
+}
+
+.favourites input {
+  display: none;
+}
+
+.favourites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.favourites label {
+  order: -1;
+}
+
+.favourites input:checked + label + .content {
+  width: 100%;
+}
+
+.favourites input:checked + label {
+  font-weight: bold;
+  color: purple;
+  border-bottom: 3px solid purple;
+}
+
+.favourites .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .favourites {
+      flex-direction: column;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+}
+
+
+.bio a {
+  display: block;
+  position: relative; /* Required for absolute positioning of paperclip inside */
+}
+
+.paperclip {
+  background: none !important;
+  box-shadow: none !important;
+  width: 20%;
+  position: absolute;     /* <-- You forgot to add this! */
+  top: 0;
+  right: 0;
+}
+
+.bio a {
+  display: block;
+  position: relative;
+}
+
+
+.back-to-top {
+  margin-left: -25px;
+  position: sticky;
+  bottom: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: rotate(45deg);
+}
+
   
