@@ -317,7 +317,7 @@ a[href="#top"]:hover {
 }
 
 .float-img {
-  float: left; /* or right depending on the image */
+  float: left; 
   margin: 0 1em 1em 0;
 }
 
@@ -358,7 +358,7 @@ a[href="#top"]:hover {
 }
 
 input[type="radio"] {
-  display: none;
+  display;
 }
 
 .photo-container {
