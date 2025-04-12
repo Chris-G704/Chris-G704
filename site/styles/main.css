@@ -356,3 +356,7 @@ a[href="#top"]:hover {
     border-top: none;
   }
 }
+
+input[type="radio"] {
+  display: none;
+}
